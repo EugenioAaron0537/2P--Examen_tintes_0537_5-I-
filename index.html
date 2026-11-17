@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estética BellaColor</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf2f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+
+    nav {
+      background-color: #000000;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #f3c6dd;
+    }
+
+    h2 {
+      color: #000000;
+      margin-top: 0;
+    }
+    .promocion {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .promocion img {
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .contenedor-tintes {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .tarjeta {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      width: 23%;
+      background-color: #fff9fc;
+    }
+
+    .tarjeta img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .caja-registro form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      gap: 10px;
+    }
+
+    .caja-registro input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo de la estética">
+      <h1>Garnier</h1>
+    </div>
+    <div class="usuario-activo">
+      Usuario activo: <strong>Eugenio </strong>
+    </div>
+  </header>
+
+  
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tintes">4 Tipos de Tintes</a>
+    <a href="#registro">Inicio / Registro</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="promocion">
+      <img src="fin.png" alt="Promocion">
+      <div>
+        <h2>¡YA TENEMOS PROMOCIONES POR EL BUEN FIN!</h2>
+        <p>En todos los tintes tendras: <strong>REVAJAS</strong> y increibles promociones</p>
+      </div>
+    </section>
+
+    <section id="promocion">
+      <h2>PROMOCIONES</h2>
+      <ul>
+        <li><strong>2x1</strong> en tintes negros.</li>
+        <li><string>40% de descuento en tintes rojos por el BUEN FIN.</string></li>
+        <li><strong>3x1</strong> en tintes morados.</li>
+        <li><strong>¡ULTIMA OFERTA!</strong> si compras 9 tintes morados te regalamos uno mas osea te llevaras 10 a tu casita.</li>
+      </ul>
+    </section>
+
+    <section id="tintes">
+      <h2>4 tipos de tintes para cabello que te podrian gustar</h2>
+      <div class="contenedor-tintes">
+
+        <div class="tarjeta">
+          <img src="negro.png" alt="Tinte Permanente">
+          <h3>1. Tinte Permanente</h3>
+          <p>Cubre canas al 100% y dura varias semanas.</p>
+          <p><em>$110</em></p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="rojo.png" alt="Tinte Semipermanente">
+          <h3>2. Tinte Semipermanente</h3>
+          <p>Sin amoníaco, da brillo y dura 15 lavadas.</p>
+          <p><em>$130</em></p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="morado.png" alt="Tinte Fantasía">
+          <h3>3. Tinte Fantasía</h3>
+          <p>Colores llamativos como rosa, azul y morado.</p>
+          <p><em>$70</em></p>
+        </div>
+
+        <div class="tarjeta">
+          <img src="castaño.jpg" alt="Tinte Orgánico">
+          <h3>4. Tinte Orgánico</h3>
+          <p>Hecho con ingredientes naturales y sin químicos.</p>
+          <p><em>$30</em></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="registro" class="caja-registro">
+      <h2>Inicio de Sesión - Registro</h2>
+      <p class="sesion-visual">Sesión iniciada como: <strong>Ana López (ana@correo.com)</strong></p>
+
+      <form>
+        <label>Nombre:</label>
+        <input type="text" placeholder="Escribe tu nombre">
+
+        <label>Correo:</label>
+        <input type="email" placeholder="Escribe tu correo">
+
+        <label>Contraseña:</label>
+        <input type="password" placeholder="Escribe tu contraseña">
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <strong>Eugenio Zarate Aaron david</strong><br>
+    <strong>0537</strong><br>
+    <em>5°I</em>
+    
+  </footer>
+
+</body>
+</html>
